@@ -1,9 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hsmp={}
-        for i,n in enumerate(nums):
-            test=target-n
-            if(test in hsmp):
-                return{hsmp[test],i}
-            hsmp[n]=i
-        return
+        hm ={}
+        for i,num in enumerate(nums):
+            req=target-num
+            if(req in hm):
+                return[hm[req],i]
+            hm[num]=i
+
