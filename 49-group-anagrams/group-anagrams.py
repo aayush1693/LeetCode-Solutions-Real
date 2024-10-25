@@ -7,4 +7,3 @@ class Solution:
                 count[ord(c)-ord("a")]+=1
             hm[tuple(count)].append(s)
         return list(hm.values())
-        
