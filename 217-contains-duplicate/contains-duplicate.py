@@ -1,8 +1,10 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        dctn = {}
+        hs= set()
         for num in nums:
-            if num in dctn:
+            if num in hs:
                 return True
-            dctn[num]= dctn.get(num,0)+1
+            hs.add(num)
         return False
+        
+        
